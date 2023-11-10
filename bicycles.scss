@@ -1,0 +1,113 @@
+.bicy{
+    display: flex;
+    flex-direction: column;
+    background-color: #feefdd;
+    div{
+        display: flex;
+        .bside{
+            height: 100vh;
+            width: 45vh;
+            background-color: black;
+            margin-top: 70px;
+            display: flex;
+            flex-direction: column;
+            ul{
+                margin: 40px 20px;
+                color: white;
+                b{
+                font-size: 20px;
+                    color: blue;
+                    margin-left: 0px;
+                }
+            }
+            p{
+                color: white;
+                margin: 20px;
+                font-size: 20px;
+            }
+        }
+        .body{
+            margin-top: 70px;
+            width: 100%;
+            background-color: #feefdd;
+            height:auto;
+            display: flex;
+            flex-direction: column;
+            h1{
+                align-self: center;
+                justify-self: center;
+               font-size: 24px;
+               color: blue;
+               margin-top:30px;
+             }
+            .bod{
+                position: relative;
+                display:grid;
+                grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+                grid-gap:10px;
+                margin: 20px;
+                margin-left: 50px;
+                .sell{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height:auto;
+                    width: 210px;
+                    &:hover{
+                        background:linear-gradient(to bottom,white,white,blue);
+                    }
+                    img{
+                        height: 180px;
+                        width: 200px;
+                        margin: 10px;
+                        &:hover{
+                            transform:translateY(7px);
+                        }
+                    }
+                    p{
+                        color: black;
+                        font-size: 20px;
+                             }
+                             b{
+                           font-size: 23px;
+                           color:brown;
+                             }
+                             .img{
+                               width: 80px; 
+                               height: 30px;
+                               margin-top: 0;
+                             }
+                }
+    
+            }
+            
+        }
+    }
+    .bottom{
+        height: 50vh;
+        background-color: rgb(8, 16, 61);
+        width: 100%;
+        .div{
+            height:20vh;
+        width: inherit;
+        border-bottom: 1px solid white;
+        }
+    }
+    .bottom{
+        height: 50vh;
+        background-color: rgb(8, 16, 61);
+        width: 100%;
+        .div{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 25px;
+            color: orange;
+            height:20vh;
+        width: inherit;
+        border-bottom: 1px solid white;
+        }
+    }
+
+}

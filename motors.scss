@@ -1,0 +1,102 @@
+.motor{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9c5bd;
+       div{
+        display: flex;
+        
+        .mside{
+            display: flex;
+            flex-direction: column;
+            height:100vh;
+            width:40vh;
+            background-color:black;
+            margin-top: 70px;
+            ul{
+                margin: 40px 20px;
+                color: white;
+                b{
+                font-size: 20px;
+                    color: blue;
+                    margin-left: 30px;
+                }
+            }
+            p{
+                color: white;
+                margin: 10px;
+                font-size: 20px;
+            }
+        }
+        .body{
+            width:100%;
+            height:auto;
+            background:  #f9c5bd;
+            display: flex;
+            flex-direction: column;
+            h1{
+                margin-top: 90px;
+                align-self: center;
+                justify-self: center;
+                color: blue;
+            }
+            .bod{
+                position: relative;
+                display:grid;
+                grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+                grid-gap:30px;
+                margin-left:30px;
+                margin-top: 40px;
+                
+                .sell{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height:210px;
+                    width: 250px;
+                    background-color: white;
+                    &:hover{
+                        background:linear-gradient(to bottom,white,white,wheat);
+                    }
+                    img{
+                        height: 180px;
+                        width: 180px;
+                        &:hover{
+                            transform:translateY(7px);
+                        }
+                    }
+                    p{
+                        color: blue;
+                        font-size: 20px;
+                             }
+                             b{
+                           font-size: 23px;
+                             }
+                             .img{
+                               width: 80px; 
+                               height: 40px;
+                             }
+                }
+    
+            }
+            
+        }
+    }
+
+  .bottom{
+      margin-top: 10px;
+        height: 50vh;
+        background-color: rgb(8, 16, 61);
+        width: 100%;
+        .div{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 20px;
+            color: orange;
+            height:20vh;
+        width: inherit;
+        border-bottom: 1px solid white;
+        }
+    }
+}

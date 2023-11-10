@@ -1,0 +1,71 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height:70vh;
+    max-height: auto;
+    width:100%;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+    url(./cars.png);
+    overflow-x: hidden;
+    h1{
+        padding-top:20vh;
+        color:gold;
+        font-size:25px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height:80vh;
+        max-height:auto ;
+        width: 100%;
+        .link{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            height: 300px;
+            width: 200px;
+            margin: 20px;
+
+            *{  
+                color:yellow;
+                font-size: 26px;
+                
+                }
+            
+            &:hover{
+                height: 400px;
+                width: 300px;
+            }
+           
+        }
+        #motor{
+            background-image:url(./motors.png);
+            background-position: center;
+            background-size: cover;
+           
+        }
+        #bicy{
+            background-image:url(./bikes.png);
+            background-position: center;
+            background-size: cover;
+        }
+        #tri{
+            background-image:url(./tris.png);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        #car{
+            background-image:url(./cars.png);
+            background-position: center;
+            background-size: cover;
+        }
+        
+        
+    }
+}

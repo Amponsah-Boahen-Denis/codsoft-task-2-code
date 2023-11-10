@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    .top{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        width: 100%;
+        background-color: rgb(8, 16, 61);
+        color: white;
+        z-index: 3;
+        button{
+            border: hidden;
+            background-color: inherit;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: white;
+            cursor: pointer;
+            &:hover{
+                color: cyan;
+                font-size:15px;
+            }
+        }
+       
+        .up{
+            height: auto;
+            width: 90%;
+    
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            h1{
+                margin-top:10px;
+                margin-left: 60px;
+                font-size: 25px;
+                span{
+                    margin-top: 0px;
+                    color: gold;
+                }
+            }
+            .sign{
+                height: 20px;
+                width: 150px;
+                background-color: yellow;
+                border-radius: 10px;
+                margin-left:400px;
+            }
+            div{
+                margin-top: 10px;
+                margin-left: 500px;
+                position: fixed;
+                img{
+                    height: 50px;
+                    width: 50px;
+                    margin-left: 30vh;
+                    margin-top: 10px;
+                    
+                }
+                .img{
+                    margin-top:0px;
+                    height: 40px;
+                    width: 70px;
+                    margin-left: 30vh;
+                    
+                }
+
+            }
+
+        
+                }
+
+      
+    }
+    .side{
+        height:90vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+        margin-top: -90vh;
+        transition: ease-in 0.2s;
+        display: flex;
+        position:fixed;
+        flex-direction: column;
+        z-index: 2;
+        button{
+            margin-top:10px;
+            margin-left:510px;
+            background-color: black;
+            color: red;
+            border: hidden;
+            z-index: 2;
+        }
+        &.active{
+        margin-top: 13vh;
+        }
+        b{
+            margin-top: 50px;
+            font-size: 23px;
+            color: blue;
+            margin-left: 40px;
+            align-self: center;
+        }
+        p{
+            margin-top: 50px;
+            font-size: 20px;
+            font-family: sans-serif;
+            margin: 5px;
+            width: 90vh;
+            align-self: center;
+        }
+        
+    }
+    .body{
+        display: flex;
+       
+        .sales{
+            width: 100%;
+        }
+        
+    }
+    
+    
+}
